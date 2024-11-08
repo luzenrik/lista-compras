@@ -1,7 +1,7 @@
 import os
 
 
-# Caminho do arquivo de lista de compras
+#nome do arquivo que armazenará a lista de compras
 ARQUIVO_LISTA = 'lista_compras.txt'
 
 def exibir_lista(lista_compras):
@@ -11,11 +11,19 @@ def exibir_lista(lista_compras):
     print("Lista de Compras:")
     for i, item in enumerate(lista_compras, start=1):
         print(f"{i}. {item}")
-def adicionar_item():
 
-def remover_item():
+
+def adicionar_item():
+    """
+    Adiciona um novo item à lista de compras.
+    """
+    item = input("Digite o item para adicionar: ")
+    lista_compras.append(item)
+    print(f"Item '{item}' adicionado com sucesso!")
+
+#def remover_item():
     
-def salvar_lista(): 
+#def salvar_lista(): 
           
 def main():
     lista_compras = carregar_lista()

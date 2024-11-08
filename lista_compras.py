@@ -35,7 +35,15 @@ def remover_item():
     else:
         print("Índice inválido.")
     
-#def salvar_lista(): 
+#salva arquivos na lista
+def salvar_lista(lista_compras):
+    """
+    Salva a lista de compras em um arquivo de texto.
+    """
+    with open(ARQUIVO_LISTA, 'w') as arquivo:
+        for item in lista_compras:
+            arquivo.write(f"{item}\n")
+    print("Lista salva com sucesso!") 
 
 # função de mostrar lista
 def carregar_lista():

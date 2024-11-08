@@ -14,7 +14,7 @@ def exibir_lista(lista_compras):
         print(f"{i}. {item}")
 
 #função add item na lista
-def adicionar_item():
+def adicionar_item(lista_compras):
     """
     Adiciona um novo item à lista de compras.
     """
@@ -23,7 +23,7 @@ def adicionar_item():
     print(f"Item '{item}' adicionado")
 
 #função de removaer item da lista
-def remover_item():
+def remover_item(lista_compras):
     """
     Remove um item específico da lista de compras.
     """
